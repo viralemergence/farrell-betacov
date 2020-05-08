@@ -1,5 +1,9 @@
 # farrell-betacov
 
-Applying the Elmasri et al. latent score approach to the Bat-CoV data, and the Bat-CoV data merged with HP3.
+Applying the Elmasri et al. combined model (scaled-phylogeny + affinity) approach to predict Bat-Betacoronavirus associations using the Bat-CoV data merged with HP3. HP3 records are truncated to virual genus.
 
-For now both datasets are truncated at the level of viral genera, and are making predictions internal to each network.
+Source data are from ViromeNet/cleanbats_betacov commit 90498e3
+
+Predictions for bat betacoronavirus hosts are in results/farrell_Predictions.csv
+
+The model predicts links internal to the documented association networks, and bat hosts which appear in the phylogeny, but are not in the original data are added to the results file with NA as probability of interaction.
