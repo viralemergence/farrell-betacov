@@ -189,7 +189,7 @@ tree <- cleaned$tree                     # cleaned tree
 
 ```{r betacov_full_cv, echo = TRUE, eval = TRUE}
 
-if(!file.exists("results/mammals_viral_genera_full_res.rds")){
+# if(!file.exists("results/mammals_viral_genera_full_res.rds")){
   
   ## indexing 10-folds of interactions
   folds <- cross.validate.fold(com, n = 10, min.per.col = 2)  
@@ -228,7 +228,7 @@ if(!file.exists("results/mammals_viral_genera_full_res.rds")){
   
   saveRDS(res,"results/mammals_viral_genera_full_res.rds")
   
-}
+# }
 
 ```
 
@@ -334,7 +334,7 @@ tree <- cleaned$tree                     # cleaned tree
 
 ```{r betacov_phylo_cv, echo = TRUE, eval = TRUE}
 
-if(!file.exists("results/mammals_viral_genera_phylo_res.rds")){
+# if(!file.exists("results/mammals_viral_genera_phylo_res.rds")){
   
   ## indexing 10-folds of interactions
   folds <- cross.validate.fold(com, n = 10, min.per.col = 2)  
@@ -373,7 +373,7 @@ if(!file.exists("results/mammals_viral_genera_phylo_res.rds")){
   
   saveRDS(res, "results/mammals_viral_genera_phylo_res.rds")
   
-}
+# }
 
 ```
 
